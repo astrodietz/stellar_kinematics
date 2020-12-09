@@ -1,0 +1,9 @@
+universe                = vanilla
+executable              = /afs/crc.nd.edu/user/s/sdietz/condor_stuff/executable_chen14.sh
+arguments               = $(PROCESS)
+getenv                  = True
+error                   = /afs/crc.nd.edu/user/s/sdietz/condor_stuff/chen14/err_files/run_$(PROCESS).error
+should_transfer_files   = yes
+when_to_transfer_output = on_exit
+request_memory          = 4 GB
+queue 7862
